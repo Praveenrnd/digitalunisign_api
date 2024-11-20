@@ -1,0 +1,4 @@
+Fake_Dot
+Fake_Left
+Original_Dot
+Original_Left

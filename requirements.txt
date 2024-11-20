@@ -1,0 +1,6 @@
+Flask            # Flask web framework
+Werkzeug         # Utilities for Flask request handling
+Pillow           # Image handling (PIL)
+tensorflow      # TensorFlow with TFLite interpreter
+numpy           # Array handling and numerical operations
+opencv-python-headless  # OpenCV without GUI support, for server environments

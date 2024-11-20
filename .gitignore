@@ -1,0 +1,11 @@
+venv/
+datasets/
+logs/
+.env
+corrupted_env/
+data/
+.git/
+.idea/
+.vs/
+__pycache__/
+static/uploads/*

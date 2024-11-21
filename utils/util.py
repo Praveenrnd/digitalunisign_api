@@ -142,7 +142,7 @@ def three_eye_detect(image_path, model_path, input_size=(224, 224)):
         bboxes[:, :4], bboxes[:, 5], bboxes[:, 4], iou_threshold=0.5, conf=0.75
     )
 
-    if len(filtered_confidences) == 3:
+    if len(filtered_confidences) >= 2:
 
         return True
     else:
@@ -167,7 +167,7 @@ def is_blurry_image(input_image):
         variance = stddev[0][0] ** 2
 
         # Check if the image is blurry based on variance threshold
-        if variance >= 25:  # Adjust the threshold as needed
+        if variance >= 9:  # Adjust the threshold as needed
             return False  # Not blurry
         else:
             return True  # Blurry
